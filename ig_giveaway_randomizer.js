@@ -13,9 +13,9 @@
 function loadAllComments(){
   let load_more = document.querySelector('._m3m1c._1s3cd')
 
-  setInterval(() => {
+  let loop = setInterval(() => {
     if (document.querySelector('._m3m1c._1s3cd') == null) {
-      clearInterval()
+      clearInterval(loop)
     }
     load_more.click()
   }, 300)
